@@ -151,6 +151,7 @@ header{
     height: 482px;
     width: 100%;
     background: black;
+    justify-content: space-around;
 }
 .s3-end{
     align-items: end;
@@ -161,16 +162,16 @@ header{
     margin: 0 auto;
 }
 .text-s3-1{
-    margin-left: 48px;
+    /* margin-left: 48px; */
     margin-top: 204px;
 }
 .text-s3-2{
     margin-top: 5px;
-    margin-left: 48px;
+    /* margin-left: 48px; */
     font-size: 28px;
 }
 .text-s3-3{
-    margin-left: 48px;
+    /* margin-left: 48px; */
     margin-top: 12px;
 }
 .text-s2-right{
@@ -181,7 +182,7 @@ header{
     height: 36px;
     background: blue;
     border-radius: 8px;
-    margin-left: 48px;
+    /* margin-left: 48px; */
     margin-top: 18px;
     display: flex;
     justify-content: center;
@@ -197,7 +198,7 @@ header{
 .image-s3-2{
     margin-left: 150px;
     margin-top: 96px;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
 }
 .image-s4{
@@ -222,24 +223,29 @@ header{
     flex-direction: row;
     display: flex;
     margin-top: 24px;
+    justify-content: center;
 }
 .fon-s7{
     background: #F8F8F8;
     border-radius: 8px;
     width: 361px;
     height: 453px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     margin-left: 11px;
+
 }
 .fon-s7-1{
     margin-left: 10px;
 }
 .position{
-    margin-left: 69px;
+    /* margin-left: 69px; */
     margin-top: 32px
 }
 .position-text{
-    margin-left: 32px;
+    /* margin-left: 32px; */
     margin-top: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -249,7 +255,7 @@ header{
     color: #000000;
 }
 .position-text2{
-    margin-left: 32px;
+    /* margin-left: 32px; */
     margin-top: 16px;
 }
 .last-picture{
@@ -335,7 +341,10 @@ header{
 .retreat-24v{
     margin-top: 24px;
 }
-@media (max-width: 391px) {
+@media (max-width: 390px) {
+    .strip{
+        height: 70px;
+    }
     .text-s2 {
         font-size: 28px;
     }
@@ -385,6 +394,8 @@ header{
     }
     .fon-s7{
         margin-top: 5px;
+        width: 100%;
+        height: 100%;
     }
     .text-s3-1{
         margin-left: 5px;
@@ -418,7 +429,7 @@ header{
 }
 @media (max-width: 485px) {
     .text1-s9{
-        font-size: 12px;
+        font-size: 16px;
     }
     .text2-s9{
         font-size: 8px;
@@ -453,6 +464,12 @@ header{
     .section7-1{
         justify-content: center;
     }
+    .delete{
+        display: none;
+    }
+    .fon-s7{
+        justify-content: center;
+    }
 }
 @media (max-width: 968px) {
     .section7-1 {
@@ -478,9 +495,17 @@ header{
         width: 100%;
     }
 }
+@media (max-width:756px) {
+    .vidstup{
+        margin-top: 10px;
+    }
+}
 @media (max-width:816px) {
     .full-container{
         display: none;
+    }
+        header{
+        height: 45px;
     }
 }
 @media (min-width: 817px) {
@@ -537,7 +562,7 @@ header{
     position: fixed;
     top: 0;
     left: -100%;
-    width: 300px;
+    width: 200px;
     height: 100%;
     margin: 0;
     padding: 80px 0;
